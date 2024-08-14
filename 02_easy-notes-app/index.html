@@ -6,10 +6,21 @@
     <link rel="stylesheet" href="./style.css">
     <title>Notes App - Easy</title>
 </head>
+<!-- the contenteditable attribute specifies whether the content of an element is editable or not. When the contenteditable attribute is not set on an element, the element will inherit it from its parent. 
+    <element contenteditable="true|false">
+-->
 <body>
     <div class="container">
-        <h1> <img src="./images/notes.png" alt=""> Notes</h1>
-        <button> <img src="./images/edit.png" alt=""> Create Notes</button>
+        <h1> <img src="./images/notes.png"> Notes</h1>
+        <button class="btn"><img src="./images/edit.png">Create Notes</button>
+        <div class="notes-container">
+            <p contenteditable="true" class="input-box">
+                <img src="./images/delete.png" alt="">
+            </p>
+        </div>
     </div>
+
+
+    <script src="./script.js"></script>
 </body>
 </html>
